@@ -26,14 +26,15 @@ function win(playerChoice, computerChoice) {
   userScore_span.innerHTML= userScore;
   result_div.innerHTML = `${convertToWord(playerChoice)} ${playerSmallString} wins ${convertToWord(computerChoice)}${computerSmallString} . You Won!`;
   document.getElementById(playerChoice).classList.add('winning-indicator');
-  setTimeout(function() {document.getElementById(playerChoice).classList.remove('winning-indicator')}, 500)
+  setTimeout(() => document.getElementById(playerChoice).classList.remove('winning-indicator'), 500)
 }
+
 function lose(playerChoice, computerChoice) {
   computerScore++;
   computerScore_span.innerHTML= computerScore;
   result_div.innerHTML = `${convertToWord(playerChoice)}${playerSmallString} loses to ${convertToWord(computerChoice)}${computerSmallString} . You Won!`;
   document.getElementById(playerChoice).classList.add('losing-indicator');
-  setTimeout(function() {document.getElementById(playerChoice).classList.remove('losing-indicator')}, 500)
+  setTimeout(() => document.getElementById(playerChoice).classList.remove('losing-indicator'), 500)
 }
 function draw(playerChoice, computerChoice) {
   result_div.innerHTML = `${convertToWord(playerChoice)}${playerSmallString} is equal to ${convertToWord(computerChoice)}${computerSmallString} . It's a draw`;
