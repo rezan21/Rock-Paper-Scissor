@@ -3,10 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>test</title>
+    <link href="https://fonts.googleapis.com/css?family=Thasadith:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    hello world!
+    <header>
+      Rock Paper Scissor
+    </header>
+
+    <div class="score-board">
+      <div id="user-label"  class="badge">  user  </div>
+      <span id="user-score">0</span> : <span id="computer-score">0</span>
+      <div id="computer-label"  class="badge">  comp  </div>
+    </div>
+
+    <div class="result">
+      <p> Paper covers rock. You win! </p>
+    </div>
+
+    <div class="choices">
+      <div class="choice" id="r"  >
+        <img src="_rock.png" alt="rock" width="80px">
+      </div>
+      <div class="choice" id="p"  >
+        <img src="_paper.png" alt="paper" width="80px">
+      </div>
+      <div class="choice" id="s"  >
+        <img src="_scissor.png" alt="scissor" width="80px">
+      </div>
+    </div>
+
+    <p id="action-message">Make your move</p>
 
     <script src="app.js"></script>
   </body>
